@@ -5,3 +5,12 @@
 #
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+rows = int(input('Введите ширину плитки: '))
+columns = int(input('Введите длину плитки: '))
+number = int(input('Сколько хотите отламать долек: '))
+
+if number % rows == 0 or number % columns == 0:
+    print('YES! У вас все получится!!')
+else:
+    print('NO! Так отломить не получится!')
