@@ -5,4 +5,11 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0) |
 
+number = int(input('Введите число: '))
+sum = int(0)
 
+while number > 0:
+    sum += number % 10
+    number //= 10
+
+print('Сумма цифр числа: ', sum)
