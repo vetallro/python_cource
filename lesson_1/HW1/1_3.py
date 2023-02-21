@@ -7,3 +7,21 @@
 #
 # 385916 -> yes
 # 123456 -> no
+
+number = int(input('Введите номер билетика: '))
+
+firstSum = 0
+lastSum = 0
+
+while number > 1000:
+    lastSum += number % 10
+    number //= 10
+
+while number > 0:
+    firstSum += number % 10
+    number //= 10
+
+if firstSum == lastSum:
+    print('Билетик счастливый!')
+else:
+    print('не повезло...')
