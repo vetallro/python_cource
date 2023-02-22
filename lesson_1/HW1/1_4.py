@@ -10,7 +10,9 @@ rows = int(input('Введите ширину плитки: '))
 columns = int(input('Введите длину плитки: '))
 number = int(input('Сколько хотите отламать долек: '))
 
-if number % rows == 0 or number % columns == 0:
+# if number % rows == 0 or number % columns == 0:
+if (number % rows == 0 or number % columns == 0) and number > columns * rows:
+
     print('YES! У вас все получится!!')
 else:
     print('NO! Так отломить не получится!')
