@@ -8,11 +8,11 @@ money = []
 for i in range(moneyNumber):
     money.append(random.randrange(2))
 sum1 = 0
-print('Монетки выпали как-то так. Пердположим, что "1" это орел, "0" это решка.')
+print('Монетки выпали как-то так. Предположим, что "1" это орел, "0" это решка.')
 print(money)
 for i in range(moneyNumber):
     if money[i] == 1:
-        sum1 +=1
+        sum1 += 1
 if sum1 < moneyNumber / 2:
     print(f'Минимально надо перевернуть {sum1} монет с орлом.')
 elif sum1 == moneyNumber / 2:
