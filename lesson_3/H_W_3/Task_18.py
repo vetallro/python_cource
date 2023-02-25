@@ -11,8 +11,9 @@
 #     -> 5
 
 import random
-number = int(input('Ведите число элементов: '))
 
+number = int(input('Ведите число элементов: '))
+# myList = [2, 7, 6, 8, 3, 4, 8, 8, 1, 0]
 myList = []
 for i in range(number):
     myList.append(random.randrange(0, 1000))
@@ -28,3 +29,8 @@ for i in range(len(myList)):
         closeNumberIndex = i
 
 print(f'Число {myList[closeNumberIndex]} ближе всего к {findNumber}.')
+
+# Ведите число элементов: 10
+# [2, 7, 6, 8, 3, 4, 8, 8, 1, 0]
+# Ведите некоторое число Х: 5
+# Число 8 ближе всего к 5.
