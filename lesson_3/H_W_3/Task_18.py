@@ -12,23 +12,25 @@
 
 import random
 
-number = int(input('Ведите число элементов: '))
 # myList = [2, 7, 6, 8, 3, 4, 8, 8, 1, 0]
+
+numberInList = int(input('Ведите число элементов: '))
 myList = []
-for i in range(number):
+for i in range(numberInList):
     myList.append(random.randrange(0, 1000))
 print(myList)
 
-findNumber = int(input('Ведите некоторое число Х: '))
+numberToFind = int(input('Ведите некоторое число Х: '))
 
-closeNumberIndex = myList[1]
+closeNumberIndex = 0
 minDelta = 10000
+
 for i in range(len(myList)):
-    if abs(myList[i] - findNumber) < minDelta:
-        minDelta = abs(myList[i] - findNumber)
+    if abs(myList[i] - numberToFind) < minDelta:
+        minDelta = abs(myList[i] - numberToFind)
         closeNumberIndex = i
 
-print(f'Число {myList[closeNumberIndex]} ближе всего к {findNumber}.')
+print(f'Число {myList[closeNumberIndex]} ближе всего к {numberToFind}.')
 
 # Ведите число элементов: 10
 # [2, 7, 6, 8, 3, 4, 8, 8, 1, 0]
