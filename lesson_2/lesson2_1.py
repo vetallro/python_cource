@@ -1,6 +1,3 @@
-
-
-
 number = int(input("Введите число: "))
 result = 0
 b = 0

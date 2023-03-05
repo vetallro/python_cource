@@ -12,15 +12,21 @@
 
 import random
 
+
 # myList = [2, 7, 6, 8, 3, 4, 8, 8, 1, 0]
 
-numberInList = int(input('Ведите число элементов: '))
+def inputnumber(message):
+    number = int(input(message))
+    return number
+
+
+numberInList = inputnumber('Ведите число элементов: ')
 myList = []
 for i in range(numberInList):
-    myList.append(random.randrange(0, 1000))
+    myList.append(random.randrange(0, 10))
 print(myList)
 
-numberToFind = int(input('Ведите некоторое число Х: '))
+numberToFind = inputnumber('Ведите некоторое число Х: ')
 
 closeNumberIndex = 0
 minDelta = 10000
@@ -36,3 +42,15 @@ print(f'Число {myList[closeNumberIndex]} ближе всего к {numberTo
 # [2, 7, 6, 8, 3, 4, 8, 8, 1, 0]
 # Ведите некоторое число Х: 5
 # Число 8 ближе всего к 5.
+
+# from random import randint
+#
+# n = int(input())
+# list_nums = [randint(1, 50) for _ in range(n)]
+#
+# print(list_nums)
+#
+# b = int(input())
+# m = min(list_nums, key=lambda x: abs(x - b))
+#
+# print(m)

@@ -10,6 +10,7 @@
 #     -> 1
 
 import random
+
 number = int(input('Ведите число элементов: '))
 
 myList = []

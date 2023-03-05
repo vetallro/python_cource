@@ -15,7 +15,7 @@ numMin = 1000
 numMax = 0
 
 for i in range(count):
-    mass = int(input(f'масса {i+1} арбуза: '))
+    mass = int(input(f'масса {i + 1} арбуза: '))
     if mass >= numMax:
         numMax = mass
     if mass <= numMin:
