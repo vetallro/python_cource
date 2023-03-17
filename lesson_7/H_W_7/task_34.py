@@ -16,6 +16,7 @@
 dict_word = ['а', 'я', 'у', 'ю', 'о', 'е', 'ё', 'э', 'и', ' ы']
 # stih = input().split()
 stih = 'пара-ра-рам рам-пам-папам па-ра-па-да'.split()
+#stih = 'ff ff - ddd sss'.split()
 # result = [sum([True for j in word if j.lower() in dict_word]) for word in stih]
 
 
@@ -25,13 +26,11 @@ for i in range(len(stih)):
     for j in stih[i]:
         if j in dict_word:
             summa += 1
-    print(summa)
     sum_list.append(summa)
-print(sum_list)
 
-if len(set(sum_list)) == 1:
-    print("Парам пам-пам")
-elif len(sum_list) == 0:
+if sum(sum_list) == 0:
     print("Нет гласных совсем!")
+elif len(set(sum_list)) == 1:
+    print("Парам пам-пам")
 else:
     print("Пам парам")
