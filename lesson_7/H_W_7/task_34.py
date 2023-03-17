@@ -31,5 +31,7 @@ print(sum_list)
 
 if len(set(sum_list)) == 1:
     print("Парам пам-пам")
+elif len(sum_list) == 0:
+    print("Нет гласных совсем!")
 else:
     print("Пам парам")
