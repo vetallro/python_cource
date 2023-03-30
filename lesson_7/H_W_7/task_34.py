@@ -14,8 +14,8 @@
 
 
 dict_word = ['а', 'я', 'у', 'ю', 'о', 'е', 'ё', 'э', 'и', ' ы']
-# stih = input().split()
-stih = 'пара-ра-рам рам-пам-папам па-ра-па-да'.split()
+stih = input().split()
+# stih = 'пара-ра-рам рам-пам-папам па-ра-па-да'.split()
 # stih = 'ff ff - ddd sss'.split()
 # result = [sum([True for j in word if j.lower() in dict_word]) for word in stih]
 
